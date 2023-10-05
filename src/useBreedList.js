@@ -24,7 +24,7 @@ export default function useBreedList(animal) {
       const json = await res.json();
       localCache[animal] = json.breeds || [];
       setBreedList(localCache[animal]);
-      setStatus("loaded");
+      setStatus("loaded"); // for testing purposes when you have async functions, have status tracked so you can write test
     }
   }, [animal]);
   return [breedList, status];
