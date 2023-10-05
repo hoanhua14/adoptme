@@ -13,3 +13,4 @@ const App = () => {
 const container = document.getElementById("root");
 const root = createRoot(container).render(<App />);
 // root.render(<App />);
+// Strictmode runs API calls twice to check if they're actually stateless
