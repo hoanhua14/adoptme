@@ -4,6 +4,8 @@ import fetchPet from "./fetchPet";
 
 const Details = () => {
   const { id } = useParams();
+  // this is the query key provided to fetchPet ["details", id], details stored in cache
+  // if ["details", id] not found, run fetchPet
   const results = useQuery(["details", id], fetchPet);
 
   if (results.isLoading) {
