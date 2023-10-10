@@ -82,3 +82,5 @@ const SearchParams = () => {
 };
 
 export default SearchParams;
+
+// replacing useEffect bc many errors when rendering can happen using it
